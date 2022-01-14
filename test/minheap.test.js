@@ -81,6 +81,21 @@ describe('Heap', function() {
     expect(output).to.equal('[Donuts, Pizza, Pasta, Soup, Cookies, Cake]');
   });
 
+  // Adapted from a test written by Ariana Gonzalez Organista
+  it("will work for adding nodes in proper order with 6 nodes", () => {
+    // Arrange
+    const numbers = [5, 27, 3, 16, 50]
+    for (let num of numbers) {
+        heap.add(num)
+    }
+
+    // Act
+    const output = heap.toString();
+
+    // Assert
+    expect(output).to.equal('[3, 16, 5, 27, 50]');
+  });
+
   it('can remove one node in the proper order', function() {
     // Arrange
     heap.add(3, 'Pasta');
