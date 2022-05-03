@@ -38,16 +38,18 @@ Make certain you also document the expected runtime of each method.
 **Challenge** If you can, do this method in O(1) space complexity.
 
 
-## Running
-To run this repo, clone and install it, then run tests. It has been tested with node `12.6.0`.
+## Installation
+This has been tested with node `12.6.0`.
 
 ```sh
-npm ci
-npm t
+npm i
 ```
 
-Note also that Mocha has watch mode:
+after cloning this project.
+
+## Testing
 
 ```sh
-npm t -- --watch
+npm test
 ```
+
